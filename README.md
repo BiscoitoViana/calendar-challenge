@@ -6,6 +6,8 @@ standards, and reusability.
 
 It consists on a demo calendar application using [Create React App](https://github.com/facebook/create-react-app).
 
+You can see it in action [here](https://biscoitoviana.github.io/calendar-challenge/)
+
 ## Available Scripts
 
 In the project directory, you can run:
