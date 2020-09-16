@@ -23,18 +23,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Launches the test runner in the interactive watch mode.<br />
 
-## Missing functionalities
-
-Due to unavailable time, not all functionalities were created. In any case, here is the list of the priorities:
+## Mandatory feats
 
 - [x] Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
 - [x] Display reminders on the calendar view in the correct time order.
 - [x] Allow the user to select color when creating a reminder and display it appropriately.
 - [x] Ability to edit reminders – including changing text, city, day, time and color.
-- [ ] Add a weather service call from a free API such as Open Weather Map, and get the weather forecast (ex. Rain) for the date of the calendar reminder based on he city.
-- [ ] Unit test the functionality: Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
+- [x] Add a weather service call from a free API such as Open Weather Map, and get the weather forecast (ex. Rain) for the date of the calendar reminder based on he city.
+- [x] Unit test the functionality: Ability to add a new "reminder" (max 30 chars) for a user entered day and time. Also, include a city.
 
-## Bonus (optional) functionalities done
+## Bonus (optional) functionalities
 
 - [x] The calendar supports multiple months.
 - [x] It is possible to delete all reminders of the same day
@@ -44,6 +42,7 @@ Due to unavailable time, not all functionalities were created. In any case, here
 
 This project is build using React. It also uses:
 
+- Axios = For ajax requests
 - ESLint and Prettier - For linting and enforce code style
 - MommentJS - To handle dates and time
 - PropTypes - To validate de types of props

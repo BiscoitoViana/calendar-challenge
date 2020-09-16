@@ -8,6 +8,11 @@
   cursor: pointer;
 }
 
+.reminder-label span {
+  display: block;
+  opacity: 0.65;
+}
+
 .reminder-label.theme--blue {
   background-color: var(--color-reminder-theme-blue);
 }

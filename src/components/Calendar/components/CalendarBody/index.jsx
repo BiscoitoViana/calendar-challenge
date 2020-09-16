@@ -6,7 +6,7 @@ import './styles.css'
 import { loadRemindersFromLocalStorage } from 'storage/reminders'
 
 import CalendarDay from './components/CalendarDay'
-import ReminderLabel from 'ui/ReminderLabel'
+import ReminderLabel from 'components/ReminderLabel'
 
 function CalendarBody({ dates, selectedDay }) {
   const [reminders, setReminders] = useState([])
