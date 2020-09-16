@@ -1,10 +1,10 @@
-# Front-en Javascript Challenge - Calendar
+# Front-end Javascript Challenge - Calendar
 
 This is a Front-end challenge to Jobsity. It is meant to test knowledge of front-end web technologies and the
 ability to create front-end UI products with attention to details, cross-browser compatibility,
 standards, and reusability.
 
-It consists on a demo calendar application using React [Create React App](https://github.com/facebook/create-react-app).
+It consists on a demo calendar application using [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -25,7 +25,7 @@ Launches the test runner in the interactive watch mode.<br />
 
 ## Missing functionalities
 
-Due to available time, not all functionalities were created. In any case, here is the list of the priorities:
+Due to unavailable time, not all functionalities were created. In any case, here is the list of the priorities:
 
 1. Weather service call from a free API to get the weather forecast for the date of the calendar reminder based on the city.
 2. Unit testing the majority of components of the project
