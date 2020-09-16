@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/calendar-challenge/static/css/main.2ed8c59f.chunk.css",
+    "main.js": "/calendar-challenge/static/js/main.88d030a1.chunk.js",
+    "main.js.map": "/calendar-challenge/static/js/main.88d030a1.chunk.js.map",
+    "runtime-main.js": "/calendar-challenge/static/js/runtime-main.a0b47bb7.js",
+    "runtime-main.js.map": "/calendar-challenge/static/js/runtime-main.a0b47bb7.js.map",
+    "static/js/2.bd1880a6.chunk.js": "/calendar-challenge/static/js/2.bd1880a6.chunk.js",
+    "static/js/2.bd1880a6.chunk.js.map": "/calendar-challenge/static/js/2.bd1880a6.chunk.js.map",
+    "index.html": "/calendar-challenge/index.html",
+    "precache-manifest.359ee2aa5a3c2dd68995d9d5ee350f29.js": "/calendar-challenge/precache-manifest.359ee2aa5a3c2dd68995d9d5ee350f29.js",
+    "service-worker.js": "/calendar-challenge/service-worker.js",
+    "static/css/main.2ed8c59f.chunk.css.map": "/calendar-challenge/static/css/main.2ed8c59f.chunk.css.map",
+    "static/js/2.bd1880a6.chunk.js.LICENSE.txt": "/calendar-challenge/static/js/2.bd1880a6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0b47bb7.js",
+    "static/js/2.bd1880a6.chunk.js",
+    "static/css/main.2ed8c59f.chunk.css",
+    "static/js/main.88d030a1.chunk.js"
+  ]
+}

@@ -42,7 +42,7 @@ Launches the test runner in the interactive watch mode.<br />
 
 This project is build using React. It also uses:
 
-- Axios = For ajax requests
+- Axios - For ajax requests
 - ESLint and Prettier - For linting and enforce code style
 - MommentJS - To handle dates and time
 - PropTypes - To validate de types of props
