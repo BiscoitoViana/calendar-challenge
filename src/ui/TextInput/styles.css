@@ -31,3 +31,9 @@
   padding: 0 1rem;
   background-color: var(--color-calendar-border-light);
 }
+
+.input-text__error {
+  font-size: 0.75rem;
+  padding: 0.25rem 0;
+  color: #c83232;
+}

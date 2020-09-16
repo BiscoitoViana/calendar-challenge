@@ -3,6 +3,7 @@ import { func } from 'prop-types'
 import moment from 'moment'
 
 import { saveNewReminderToLocalStorage } from 'storage/reminders'
+import { dateIsValid, timeIsValid } from './reminderValidations'
 
 import ColorInput from 'ui/ColorInput'
 import TextInput from 'ui/TextInput'
@@ -11,12 +12,44 @@ import './styles.css'
 
 function NewReminder({ closeDialog }) {
   const [description, setDescription] = useState('')
+  const [errorDescription, setErrorDescription] = useState('')
   const [date, setDate] = useState('')
+  const [errorDate, setErrorDate] = useState('')
   const [time, setTime] = useState('')
+  const [errorTime, setErrorTime] = useState('')
   const [city, setCity] = useState('')
   const [theme, setTheme] = useState('blue')
 
+  function canSaveNewReminder() {
+    let errorsCount = 0
+
+    if (!description) {
+      setErrorDescription('Description field is mandatory')
+      errorsCount++
+    } else {
+      setErrorDescription('')
+    }
+
+    if (!dateIsValid(date)) {
+      setErrorDate('Please provide a valid date')
+      errorsCount++
+    } else {
+      setErrorDate('')
+    }
+
+    if (!timeIsValid(time)) {
+      setErrorTime('Please provide a valid time')
+      errorsCount++
+    } else {
+      setErrorTime('')
+    }
+
+    if (errorsCount > 0) return false
+    return true
+  }
+
   function saveNewReminder() {
+    if (!canSaveNewReminder()) return
     const item = {
       id: Date.now().toString(),
       description: description,
@@ -50,6 +83,7 @@ function NewReminder({ closeDialog }) {
           value={description}
           onChange={setDescription}
           maxLength={30}
+          errorMessage={errorDescription}
         />
 
         <div className="reminder-lightbox__datetime-fields">
@@ -60,6 +94,7 @@ function NewReminder({ closeDialog }) {
             value={time}
             onChange={setTime}
             maxLength={5}
+            errorMessage={errorTime}
           />
           <TextInput
             name="reminder-day"
@@ -68,6 +103,7 @@ function NewReminder({ closeDialog }) {
             value={date}
             onChange={setDate}
             maxLength={10}
+            errorMessage={errorDate}
           />
         </div>
 

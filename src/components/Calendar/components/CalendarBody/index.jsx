@@ -35,12 +35,14 @@ function CalendarBody({ dates, selectedDay }) {
               isWeekend={index === 0 || index === 6}
               isNotCurrentMonth={!selectedDay.isSame(day, 'month')}
             >
-              {reminders &&
-                reminders.sort(sorting).map(reminder => {
+              {
+                // eslint-disable-next-line array-callback-return
+                reminders?.sort(sorting).map(reminder => {
                   if (day.isSame(moment(reminder.date), 'day')) {
                     return <ReminderLabel key={reminder.id} {...reminder} />
                   }
-                })}
+                })
+              }
             </CalendarDay>
           ))}
         </div>

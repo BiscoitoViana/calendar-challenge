@@ -3,7 +3,15 @@ import { string, number, func } from 'prop-types'
 
 import './styles.css'
 
-function TextInput({ label, name, value, onChange, maxLength, placeholder }) {
+function TextInput({
+  label,
+  name,
+  value,
+  onChange,
+  maxLength,
+  placeholder,
+  errorMessage
+}) {
   const [remainingCharacters, setRemainingCharacters] = useState(maxLength || 0)
 
   useEffect(() => {
@@ -39,6 +47,7 @@ function TextInput({ label, name, value, onChange, maxLength, placeholder }) {
         onChange={onChangeText}
         placeholder={placeholder}
       />
+      {errorMessage && <p className="input-text__error">{errorMessage}</p>}
     </div>
   )
 }
@@ -49,13 +58,15 @@ TextInput.propTypes = {
   value: string.isRequired,
   onChange: func.isRequired,
   maxLength: number,
-  placeholder: string
+  placeholder: string,
+  errorMessage: string
 }
 
 TextInput.defaultProps = {
   label: '',
   maxLength: 0,
-  placeholder: ''
+  placeholder: '',
+  errorMessage: ''
 }
 
 export default TextInput
