@@ -1,0 +1,60 @@
+.input--color {
+  margin-bottom: 1rem;
+}
+
+.input-color__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.input--color ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 0.5rem;
+}
+
+.input--color ul li {
+  text-align: center;
+}
+
+.input-color__button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.1875rem;
+  color: white;
+}
+
+.input-color__button.is-selected {
+  border: solid 0.1875rem var(--color-calendar-border);
+  box-sizing: border-box;
+}
+
+.input-color__button.blue {
+  background-color: var(--color-reminder-theme-blue);
+}
+
+.input-color__button.green {
+  background-color: var(--color-reminder-theme-green);
+}
+
+.input-color__button.grey {
+  background-color: var(--color-reminder-theme-grey);
+}
+
+.input-color__button.purple {
+  background-color: var(--color-reminder-theme-purple);
+}
+
+.input-color__button.red {
+  background-color: var(--color-reminder-theme-red);
+}
+
+.input-color__button.yellow {
+  background-color: var(--color-reminder-theme-yellow);
+}

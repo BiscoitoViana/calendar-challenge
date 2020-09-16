@@ -1,0 +1,33 @@
+.reminder-label {
+  border-radius: 0.1875rem;
+  padding: 0.25rem 1rem;
+  background-color: #16cc7d;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: white;
+  cursor: pointer;
+}
+
+.reminder-label.theme--blue {
+  background-color: var(--color-reminder-theme-blue);
+}
+
+.reminder-label.theme--green {
+  background-color: var(--color-reminder-theme-green);
+}
+
+.reminder-label.theme--grey {
+  background-color: var(--color-reminder-theme-grey);
+}
+
+.reminder-label.theme--purple {
+  background-color: var(--color-reminder-theme-purple);
+}
+
+.reminder-label.theme--red {
+  background-color: var(--color-reminder-theme-red);
+}
+
+.reminder-label.theme--yellow {
+  background-color: var(--color-reminder-theme-yellow);
+}

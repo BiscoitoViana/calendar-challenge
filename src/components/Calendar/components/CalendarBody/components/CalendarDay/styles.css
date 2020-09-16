@@ -1,0 +1,53 @@
+.calendar-body__day {
+  position: relative;
+  padding: 1.125rem 0.75rem 0.5rem 1.25rem;
+  height: 6.25rem;
+  border: solid 0.0625rem var(--color-calendar-border-light);
+  overflow: hidden;
+}
+
+.calendar-body__day.is-weekend {
+  background-color: var(--color-weekend-background);
+}
+
+.calendar-body__day.is-selected {
+  border: solid 0.0625rem var(--color-header-background);
+}
+
+.calendar-body__day.is-today .calendar-day__label {
+  color: var(--color-current-day-label);
+}
+
+.calendar-body__day.is-not-current-month .calendar-day__label {
+  color: var(--color-calendar-border);
+}
+
+.calendar-day__label {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.calendar-day__reminders {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.calendar-day__reminders::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: transparent;
+}
+
+.calendar-day__reminders::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background-color: rgba(150, 150, 180, 0.35);
+  border: solid 0.125rem #ffffff;
+  border-radius: 0.1875rem;
+}
+
+.calendar-day__reminders::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}

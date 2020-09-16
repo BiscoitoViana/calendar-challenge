@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --color-text-primary: #2a333d;
+  --color-text-secondary: #949ca5;
+  --color-header-background: #309bd2;
+  --color-header-text: #ffffff;
+  --color-calendar-border: #a8a8a8;
+  --color-calendar-border-light: #f0f0f0;
+  --color-button-background: #e4e4e4;
+  --color-button-background-light: #f1f1f1;
+  --color-current-day-label: #30c7d2;
+  --color-weekend-background: #f9f9f9;
+
+  --color-reminder-theme-blue: #15d8d1;
+  --color-reminder-theme-green: #16cc7d;
+  --color-reminder-theme-grey: #9faaa9;
+  --color-reminder-theme-purple: #9f15d8;
+  --color-reminder-theme-red: #d81543;
+  --color-reminder-theme-yellow: #d8cb15;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  border: 0;
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  list-style-image: none;
+}
+
+#app {
+  width: 87.5%;
+  margin: 0 auto;
+}
